@@ -121,6 +121,7 @@ void thread_unblock (struct thread *);
 // <I added> pintOs.alarm.project
 void thread_sleep(int64_t ticks);
 void thread_awake(void);
+void thread_unblock_front (struct thread *);
 
 struct thread *thread_current (void);
 tid_t thread_tid (void);
